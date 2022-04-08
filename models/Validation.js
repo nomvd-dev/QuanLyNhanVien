@@ -35,6 +35,7 @@ var Validation = function() {
         document.querySelector(selectorError).innerHTML = '';
         return true;
     }
+    console.log("b2");
     this.kiemTraSoGioLam = function(value,name,selectorError, minChar, maxChar){
         if (Number(value) < minChar || Number(value) > maxChar){
             document.querySelector(selectorError).innerHTML = name + ` từ ${minChar} đến ${maxChar} giờ!`;
