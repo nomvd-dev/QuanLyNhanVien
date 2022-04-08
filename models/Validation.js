@@ -19,6 +19,7 @@ var Validation = function() {
     }
     this.kiemTraSoLuongKyTu = function(value,name,selectorError, minChar, maxChar){
         var len = value.length;
+        console.log(len);
         if (Number(len) < minChar || Number(len) > maxChar){
             document.querySelector(selectorError).innerHTML = name + ` từ ${minChar} đến ${maxChar} ký số!`;
             return false;
