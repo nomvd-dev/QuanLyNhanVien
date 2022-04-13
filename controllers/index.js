@@ -30,7 +30,6 @@ document.querySelector('#btnThemNhanVien').onclick = function () {
     nv.soGioLamTrongThang = document.querySelector('#soGioLam').value;
 
     var tagChucVu = document.querySelector('#chucVu');
-    console.log(tagChucVu.options);
     var arrayOption = tagChucVu.options;
     nv.chucVu = arrayOption[tagChucVu.options.selectedIndex].innerHTML;
 
